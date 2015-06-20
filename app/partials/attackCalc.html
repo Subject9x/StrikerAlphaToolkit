@@ -1,0 +1,305 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-center"><b><h3><label class="label label-info">{{calcTitle}}</label></h3></b></div>
+  </div>
+  <!-- Attacker Skill Check-->
+  <div class="row" ng-show="calcOptions.atkSkill_op">
+    <div class="row">
+      <div class="col-xs-8"><h2><span class=" label label-default">Skill:</span></h2></div>
+      <div class="col-xs-4"><h1><span class="label label-info">+{{mods.atk_Skill || 0}}</span></h1></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-11">
+        <div class="btn-group btn-group-lg">
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="0" uncheckable>0</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="1" uncheckable>1</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="2" uncheckable>2</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="3" uncheckable>3</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="4" uncheckable>4</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="5" uncheckable>5</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="6" uncheckable>6</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="7" uncheckable>7</label>
+          <label class="btn btn-default" ng-model="mods.atk_Skill" btn-radio="8" uncheckable>8</label>             
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Indirect Attacker Mod -->
+  <div class="row" ng-show="calcOptions.atkInd_op">
+    <div class="row">
+      <div class="col-xs-8"><h2><span class=" label label-default">Indirect Attack</span></h2></div>
+      <div class="col-xs-4"><h1><span class="label label-info">+{{mods.atk_ind = 1}}</span></h1></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-11">
+        <h4> because attack is indirect.</h4>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Spotter Indirect Mod -->
+  <div class="row" ng-show="calcOptions.sptInd_op">
+    <div class="row">
+      <div class="col-xs-8"><h2><span class=" label label-default">Spotter fire?</span></h2></div>
+      <div class="col-xs-4"><h1><span class="label label-info">+{{mods.spt_ind}}</span></h1></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-class="checks.chkSptAtk ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg '" ng-model="checks.chkSptAtk" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkSptAtk ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Spotter Forward Observer Mod -->
+  <div class="row" ng-show="calcOptions.sptFwdObs_op">
+    <div class="row">
+      <div class="col-xs-8"><h2><span class=" label label-default">Forward Observer?</span></h2></div>
+      <div class="col-xs-4"><h1><span class="label label-info">{{mods.spt_FwdObs}}</span></h1></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-class="checks.chkSptSkl ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg '" ng-model="checks.chkSptSkl" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkSptSkl ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Melee Attack Type -->
+  <div class="row" ng-show="calcOptions.atkMelType_op">
+    <div class="row">
+      <div class="col-xs-8"><h2><span class=" label label-default">Physical Attack:</span></h2></div>
+      <div class="col-xs-4"><h1><span class="label label-info">+{{mods.atk_MelType || 0}}</span></h1></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-11">
+        <div class="btn-group btn-group-lg">
+          <label class="btn btn-default" ng-model="mods.atk_MelType" btn-radio="0" uncheckable>Standard</label>
+          <label class="btn btn-default" ng-model="mods.atk_MelType" btn-radio="0" uncheckable>MEL ability</label>
+          <label class="btn btn-default" ng-model="mods.atk_MelType" btn-radio="1" uncheckable>Charge</label>
+          <label class="btn btn-default" ng-model="mods.atk_MelType" btn-radio="3" uncheckable>DFA</label>           
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Attacker Range Check -->
+  <div class="row" ng-show="calcOptions.atkRng_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class=" label label-default">Range</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.atk_Range || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-11">
+        <div class="btn-group btn-group-lg">
+          <label class="btn btn-default" ng-model="mods.atk_Range" btn-radio="0" uncheckable>Short</label>
+          <label class="btn btn-default" ng-model="mods.atk_Range" btn-radio="2" uncheckable>Medium</label>
+          <label class="btn btn-default" ng-model="mods.atk_Range" btn-radio="4" uncheckable>Long</label>
+          <label class="btn btn-default" ng-model="mods.atk_Range" btn-radio="6" uncheckable>Extreme</label>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Attacker Jump Check -->
+  <div class="row" ng-show="calcOptions.atkJmp_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class=" label label-default">Attacker Jump?</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.atk_Jump || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-class="checks.chkAtkJump ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg '" ng-model="checks.chkAtkJump" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkAtkJump ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Target Immobile Check -->
+  <div class="row" ng-show="calcOptions.tgtImmb_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class=" label label-default">Target Immobile?</span></h2>       
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">{{mods.tgt_Immb || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-class="checks.chkTgtImmb ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg '" ng-model="checks.chkTgtImmb" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkTgtImmb ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Target TMM Check -->
+  <div class="row" ng-show="calcOptions.tgtMod_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class=" label label-default">TMM of Defender</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.tgt_Mod || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1">
+        <div class="btn-group btn-group-lg" >
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Mod" btn-radio="0" uncheckable>0</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Mod" btn-radio="1" uncheckable>1</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Mod" btn-radio="2" uncheckable>2</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Mod" btn-radio="3" uncheckable>3</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Mod" btn-radio="4" uncheckable>4</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Mod" btn-radio="5" uncheckable>5</label>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Target Stealth Check -->
+  <div class="row" ng-show="calcOptions.tgtStlh_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class=" label label-default">Stealth Armor</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.tgt_Stlh || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1">
+        <div class="btn-group btn-group-lg" >
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Stlh" btn-radio="0" uncheckable>Short</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Stlh" btn-radio="1" uncheckable>Medium</label>
+          <label class="btn btn-default" ng-disabled="checks.chkTgtImmb" ng-model="mods.tgt_Stlh" btn-radio="2" uncheckable>Long</label>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Target Jump Check -->
+  <div class="row" ng-disabled="checks.chkTgtImmb" ng-show="calcOptions.tgtJmp_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class="label label-default" >Target jumped?</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.tgt_Jump || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-disabled="checks.chkTgtImmb" ng-class="checks.chkTgtJump ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg'" 
+            ng-model="checks.chkTgtJump" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkTgtJump? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Target Basic Cover Check -->
+  <div class="row" ng-show="calcOptions.tgtCvr_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class="label label-default">Target in Cover?</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.tgt_Cover || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-class="checks.chkTgtCover ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg'" ng-model="checks.chkTgtCover" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkTgtCover ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Target Basic Cover Check -->
+  <div class="row" ng-show="calcOptions.tgtPCvr_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class="label label-default">Partial Cover?</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.tgt_PrtCvr || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <button type="button" ng-class="checks.chkTgtPCvr ? 'btn btn-success btn-lg' : 'btn btn-danger btn-lg'" ng-model="checks.chkTgtPCvr" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
+          <span ng-class="checks.chkTgtPCvr ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"/>
+        </button>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Attacker Fire Control Damage Check-->
+  <div class="row" ng-show="calcOptions.atkFC_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class="label label-default">Fire Control</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.atk_CritFC || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1">
+        <div class="btn-group btn-group-lg">
+          <label class="btn btn-default" ng-model="mods.atk_CritFC" btn-radio="0" uncheckable>0</label>
+          <label class="btn btn-default" ng-model="mods.atk_CritFC" btn-radio="1" uncheckable>1</label>
+          <label class="btn btn-default" ng-model="mods.atk_CritFC" btn-radio="2" uncheckable>2</label>
+          <label class="btn btn-default" ng-model="mods.atk_CritFC" btn-radio="3" uncheckable>3</label>
+          <label class="btn btn-default" ng-model="mods.atk_CritFC" btn-radio="4" uncheckable>4</label>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  <!-- Attacker Heat Check -->
+  <div class="row" ng-show="calcOptions.atkHt_op">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2><span class="label label-default">Heat Level</span></h2>
+      </div>
+      <div class="col-xs-4">
+        <h1><span class="label label-info">+{{mods.atk_Heat || 0}}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1">
+        <div class="btn-group btn-group-lg">
+          <label class="btn btn-default" ng-model="mods.atk_Heat" btn-radio="0" uncheckable>0</label>
+          <label class="btn btn-default" ng-model="mods.atk_Heat" btn-radio="1" uncheckable>1</label>
+          <label class="btn btn-default" ng-model="mods.atk_Heat" btn-radio="2" uncheckable>2</label>
+          <label class="btn btn-default" ng-model="mods.atk_Heat" btn-radio="3" uncheckable>3</label>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+  </div>
+  
+  
+  <!-- Results -->
+  <div class="row"><h1><span class="label label-primary">Target Number on 2D6</span></h1></div>
+  <div class="row">
+    <div class="col-xs-3"><h1><label id="resultLabel" ng-class="resultTemp()">{{result}}</label></h1></div>
+    <div class="col-xs-3"><h1><label id="oddsLabel" ng-class="resultTemp()">{{odds}}%</label></h1></div>
+  </div>
+</div>

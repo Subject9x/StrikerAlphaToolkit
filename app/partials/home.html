@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <!-- Title -->
+  <div class="row">
+    <div class="text-center">
+      <b><h2><label class="label label-danger">Striker-Alpha Toolkit</label></h2></b>
+    </div>
+  </div>
+  <div class="row">
+    <div class="text-center">
+      <h3><b><label class="label label-primary">Attack Calculators</label></b></h3>
+    </div>
+  </div>
+  <!-- left colum : buttons -->
+  <div class="row">
+    <div class="col-xs-4">
+      <!-- calculator toolbar -->
+      <div class="row">
+        <div class="btn-group btn-group-vertical btn-group-lg">
+          <label class="btn btn-default" ng-model="calcChoice" btn-radio="0" uncheckable>Basic</label>
+          <label class="btn btn-default" ng-model="calcChoice" btn-radio="1" uncheckable>Advanced</label>
+          <label class="btn btn-default" ng-model="calcChoice" btn-radio="2" uncheckable>Indirect</label>
+          <label class="btn btn-default" ng-model="calcChoice" btn-radio="3" uncheckable>Artillery</label>
+          <label class="btn btn-default" ng-model="calcChoice" btn-radio="4" uncheckable>Melee</label>
+        </div>
+      </div>
+    </div>
+    <!-- right column : info and go confirmation -->
+    <div class="col-xs-8">
+      <div class="row">
+        <div class="panel panel-info">
+          <div class="panel panel-heading text-center"><h4>{{calcMode.title}}</h4></div>
+          <div class="panel panel-body">{{calcMode.desc}}</div>
+          <div class="text-center">
+            <label ng-click="handleCalcChoice()" class="btn btn-success btn-lg">Go<span class="glyphicon glyphicon-chevron-right"></span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- force comp -->
+  <div class="row">
+    <div class="text-center">
+      <h3><b><label class="label label-primary">Force Builder</label></b></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4"><label class="label label-warning">coming soon</label></div>
+  </div>
+  <div class="row">
+    <div class="btn-group-vertical btn-group-lg" >
+      <label class="btn btn-default" ng-model="calcChoice" btn-radio="0" uncheckable disabled>Pilot Skill</label>
+      <label class="btn btn-default" ng-model="calcChoice" btn-radio="1" uncheckable disabled>Ability Index</label>
+      <label class="btn btn-default" ng-model="calcChoice" btn-radio="2" uncheckable disabled>Lance Index</label>
+    </div>
+  </div>
+</div>
