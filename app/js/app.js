@@ -13,12 +13,16 @@ var SA_app_Ctrls = angular.module('SA_app_Ctrls', []);
 SA_app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/calc:type', {
-        templateUrl: 'partials/attackCalc.html',
-        controller: 'CalcControl'
+      when('/calc/:type', {
+        templateUrl : 'partials/attackCalc.html',
+        controller  : 'CalcControl'
       }).when('/home', {
-        templateUrl: 'partials/home.html',
-        controller: 'HomeControl'
+        templateUrl : 'partials/home.html',
+        controller  : 'HomeControl'
+      }).
+      when('/psk',{
+        templateUrl : 'partials/pilotSkill.html',
+        controller  : 'PSAControl'
       }).
       otherwise({
         redirectTo: '/home'
