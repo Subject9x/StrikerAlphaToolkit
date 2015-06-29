@@ -3,19 +3,52 @@
     <div class="text-center"><b><h3><label class="label label-info">Pilot Skill Adjuster</label></h3></b></div>
   </div>
   
-  <!-- Adjustment Mode select -->
+  <!-- Unit Actual Point Value -->
   <div class="row">
-    <div class="col-xs-8"><h2><span class="label label-default">Select Mode</span></h2></div>
+    <div class="text-center"><h2><span class="label label-default">Unit Point Value</span></h2></div>
   </div>
+  
   <div class="row">
-    <div class="col-xs-offset-3">
-      <label class="btn btn-default" ng-model="pvMode" btn-radio="0" uncheckable>Increase</label>
-      <label class="btn btn-default" ng-model="pvMode" btn-radio="1" uncheckable>Decrease</label>
+    <div class="text-center">
+      <span>
+        <h4>Enter the Unit's base <i>un-modified</i> point value.</h4>
+      </span>
+    </div>
+    <div class="text-center">
+      <input type="number" min="0" pattern="[0-9]{1,3}" ng-model="unitCost.start" ng-trim="true"/>
     </div>
   </div>
   
+  <!-- New Pilot skill Slider -->
   <div class="row">
-  
+    <div class="text-center"><h2><span class="label label-default">Desired Skill</span></h2></div>
   </div>
   
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-3">
+      <label ng-click="alterPilotSkill(true)" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-plus"/>
+      </label>
+    </div>
+    <div class="col-xs-4">
+      <h1><span class="label label-info">{{pilotSkill.user}}</span></h1>
+    </div>
+    <div class="col-xs-3">
+      <label ng-click="alterPilotSkill(false)" class="btn btn-warning btn-lg">
+        <span class="glyphicon glyphicon-minus"/>
+      </label>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+  
+  <!-- Results -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h1><span class="label label-primary">Results</span></h1></div>
+    </div>
+    <div class="col-xs-10">
+      <h1><label id="resultLabel" >{{unitCost.adj}}</label></h1>
+    </div>
+  </div>
 </div>
