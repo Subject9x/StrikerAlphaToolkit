@@ -4,7 +4,7 @@
 SA_app_Ctrls.controller('PSAControl', ['$scope', function($scope){
 
   $scope.unitCost = {
-    start : 39,
+    start : 0,
     inc   : 0,
     dec   : 0,
     adj   : 0

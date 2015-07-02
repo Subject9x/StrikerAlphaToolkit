@@ -24,6 +24,10 @@ SA_app.config(['$routeProvider',
         templateUrl : 'partials/pilotSkill.html',
         controller  : 'PSAControl'
       }).
+      when('/psi',{
+        templateUrl : 'partials/skillIndex.html',
+        controller  : 'PSIControl'
+      }).
       otherwise({
         redirectTo: '/home'
       });

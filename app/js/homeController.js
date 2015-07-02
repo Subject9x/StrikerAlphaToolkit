@@ -41,7 +41,7 @@ SA_app_Ctrls.controller('HomeControl', ['$scope','CalcModeService', function($sc
     },    
     pilotSkill : {
       title : "Adjust Pilot Skill",
-      desc  : "Find the battle-value cost for a Unit that has a Pilot Skill rating other than 4.",
+      desc  : "Find the Point Value(PV) cost for a Unit that has a Pilot Skill rating other than 4.",
       mode  : "psk"
     } 
   };
