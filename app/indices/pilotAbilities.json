@@ -1,0 +1,22 @@
+[
+  {
+    "Title": "Animal Mimicry",
+    "Points": 2,
+    "UnitType": ["Quad Mech"],
+    "info": [
+      "-2in./1MP to cost of Hvy. Wood, Hvy. Jungle, Urban terrain.",
+      "All enemy units within 6in./3 hex to this unit:",
+      "roll 2D6, 8 or less, enemy unit is Intimidated."
+    ]
+  },
+  {
+    "Title": "Antagonizer",
+    "Points": 3,
+    "UnitType": ["Any"],
+    "info": [
+      "-2in./1MP to cost of Hvy. Wood, Hvy. Jungle, Urban terrain.",
+      "All enemy units within 6in./3 hex to this unit:",
+      "roll 2D6, 8 or less, enemy unit is Intimidated."
+    ]
+  }
+]

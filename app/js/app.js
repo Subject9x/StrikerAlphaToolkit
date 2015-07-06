@@ -5,7 +5,9 @@
 var SA_app = angular.module('SA_app', [
   'ui.bootstrap',
   'ngRoute',
-  'SA_app_Ctrls'
+  'SA_app_Ctrls',
+  'SA_app_AblServ',
+  'AblFilters'
 ]);
 
 var SA_app_Ctrls = angular.module('SA_app_Ctrls', []);
@@ -24,9 +26,13 @@ SA_app.config(['$routeProvider',
         templateUrl : 'partials/pilotSkill.html',
         controller  : 'PSAControl'
       }).
-      when('/psi',{
-        templateUrl : 'partials/skillIndex.html',
-        controller  : 'PSIControl'
+      when('/abl',{
+        templateUrl : 'partials/abilityIndex.html',
+        controller  : 'ablControl'
+      }).
+      when('/abl/:type',{
+        templateUrl : 'partials/abilityInfo.html',
+        controller  : 'ablInfoControl'
       }).
       otherwise({
         redirectTo: '/home'
