@@ -16,7 +16,603 @@
     "info": [
       "-2in./1MP to cost of Hvy. Wood, Hvy. Jungle, Urban terrain.",
       "All enemy units within 6in./3 hex to this unit:",
-      "roll 2D6, 8 or less, enemy unit is Intimidated."
+      "roll 2D6, 8 or less, enemy unit is Intimidated.",
+      "Iron Will: +2 to Intimidation roll."
+    ]
+  },
+  {
+    "Title": "Blood Stalker",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Designate 1 Enemy Unit before gameplay.",
+      "Rest of game apply -1 To-Hit to this target.",
+      "When Target is destroyed, choose a new Target.",
+      "+2 to any other Target until Target is destroyed."
+    ]
+  },
+  {
+    "Title": "Cluster Hitter",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "If Unit does not move during turn.",
+      "For any FLK/LRM/SRM/TOR attack:",
+      "Add 1 DMG point if attack hits.",
+      "Applies to special and normal attacks."
+    ]
+  },
+  {
+    "Title": "Combat Intuition",
+    "Points": 3,
+    "UnitType": ["Any"],
+    "info": [
+      "Once every 3 Turns:",
+      "When Player wins Initiative;",
+      "This Unit may resolve its move and attack",
+      "Before any Unit has moved."
+    ]
+  },
+  {
+    "Title": "Cross-Country",
+    "Points": 2,
+    "UnitType": ["Combat Vehicles; Ground only"],
+    "info": [
+      "Unit may enter prohibited terrain,",
+      "Move cost for that terrain is doubled."
+    ]
+  },
+  {
+    "Title": "Demoralizer",
+    "Points": 3,
+    "UnitType": ["Any"],
+    "info": [
+      "Effect radius 6in/3 hex",
+      "Enemy must roll 2D6 before any attacks.",
+      "Result of 8 or less, enemy is intimidated."
+    ]
+  },
+  {
+    "Title": "Dodge",
+    "Points": 2,
+    "UnitType": ["Mech", "ProtoMech"],
+    "info": [
+      "All enemy Physical Attacks:",
+      "+2 To-Hit this Unit."
+    ]
+  },
+  {
+    "Title": "Dust-Off",
+    "Points": 2,
+    "UnitType": ["VTOL", "Fighter", "Small Craft", "Dropship"],
+    "info": [
+      "When making Landing or Lift-off Roll and",
+      "Unit is in Inappropriate landing Area,",
+      "Reduce effect from +2 to +1"
+    ]
+  },
+  {
+    "Title": "Eagle's Eyes",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Add 2in/1 hex to any PRB special.",
+      "Unit gains RCN special.",
+      "Auto-detect any hidden units within 2in/1hex,",
+      "Even if target has ECM specials.",
+      "+2 to Minefield avoidance Target Numbers."      
+    ]
+  },
+  {
+    "Title": "Environment Specialist",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Choose an atmospheric or weather effect.",
+      "Specify before gameplay.",
+      "Reduce any environ. move cost by 2in/1hex",
+      "Reducy any environ. to-hit cost by 1."
+    ]
+  },
+  {
+    "Title": "Fist Fire",
+    "Points": 2,
+    "UnitType": ["Mech", "ProtoMech"],
+    "info": [
+      "When applying Melee Attack damage:",
+      "Add 1/2 of Unit's Short range damage,",
+      "rounded up, to the attack.",
+      "Cannot be combined with Street Fighter.",
+      "does not apply to Charge or DFA."
+    ]
+  },
+  {
+    "Title": "Forward Observer",
+    "Points": 1,
+    "UnitType": ["Any"],
+    "info": [
+      "When Unit spots for IF or ART attack:",
+      "the attack gains a -2 to the To-Hit number."
+    ]
+  },
+  {
+    "Title": "Golden Goose",
+    "Points": 3,
+    "UnitType": ["VTOl","Fighter","Small Craft"],
+    "info": [
+      "When resolving Air-to-Ground combat:",
+      "Apply a -1 to the To-Hit to any",
+      "Air-to-Ground Strafing or Striking attacks.",
+      "Apply -2 to the To-Hit to any",
+      "Bombing attacks.",
+      "Scatter distance of missed bombing reduced by",
+      "2in/1 hex."
+    ]
+  },
+  {
+    "Title": "Ground-Hugger",
+    "Points": 2,
+    "UnitType": ["VTOl","Fighter","Small Craft"],
+    "info": [
+      "When making an Air-to-Ground attack:",
+      "Unit may make a 'double-strafe' or 'double-strike'.",
+      "Double-strafe: break attack run into 2 separate strips.",
+      "Each strip at least 2in long/ 2in wide.",
+      "Double-Strike: Deliver 2 strikes in a single pass."
+    ]
+  },
+  {
+    "Title": "Heavy Lifter",
+    "Points": 1,
+    "UnitType": ["Mech/Any"],
+    "info": [
+      "Add 1 level to max Size of any Cargo the mech can",
+      "Lift, Drag, and Throw.",
+      "If Size exceeds 5, Unit can lift LG objects.",
+      "If Unit already can lift LG objects, it can now lift VLG.",
+      "If Item is 3 Sizes or smaller than Unit size:",
+      "Move is only reduced by 2in/1 hex rather than half."
+    ]
+  },
+  {
+    "Title": "Hopper",
+    "Points": 1,
+    "UnitType": ["Mech"],
+    "info": [
+      "When Unit's MP is reduced to 0 by Critical hits:",
+      "Unit may make special Control Roll with",
+      "a target number = Pilot Skill + 2.",
+      "Success = a move 2in/1 hex.",
+      "Subsequent crits require new rolls",
+      "Does not grant roll for being Shutdown or stuck."
+    ]
+  },
+  {
+    "Title": "Hot Dog",
+    "Points": 2,
+    "UnitType": ["Mech", "Aerospace"],
+    "info": [
+      "Sustain 4 points of heat before shutdown.",
+      "At 4 Heat points, unit loses 8in/4 hex move,",
+      "and suffers +4 to their To-hit."
+    ]
+  },
+  {
+    "Title": "Human TRO",
+    "Points": 1,
+    "UnitType": ["Any"],
+    "info": [
+      "When using Concealing Unit Data rules:",
+      "This Unit automatically identifies any non-hidden Unit",
+      "within 12in/6 hex as if Unit has LPRB special.",
+      "Unit cannot reveal Hidden Units, however."
+    ]
+  },
+  {
+    "Title": "Iron Will",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "When Unit must make roll triggered by:",
+      "Antagonizer, Animal Mimicry, Demoralizer;",
+      "Unit gains +2 to their Intimidation roll.",
+      "If using Morale rules, Unit gets -2 to any",
+      "Route or Nerve recovery checks."
+    ]
+  },
+  {
+    "Title": "Iron Will",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "When Unit must make roll triggered by:",
+      "Antagonizer, Animal Mimicry, Demoralizer;",
+      "Unit gains +2 to their Intimidation roll.",
+      "If using Morale rules, Unit gets -2 to any",
+      "Route or Nerve recovery checks."
+    ]
+  },
+  {
+    "Title": "Jumping Jack",
+    "Points": 2,
+    "UnitType": ["Mech","ProtoMech"],
+    "info": [
+      "When the Unit has jumped and makes an Attack,",
+      "Apply a -1 to the To-Hit target number."
+    ]
+  },
+  {
+    "Title": "Lucky",
+    "Points": "Varies",
+    "UnitType": ["Any"],
+    "info": [
+      "points 1-4.",
+      "For every point spent, Unit may reroll",
+      "1 failed Attack or Control roll per scenario.",
+      "Roll can only be rerolled once."
+    ]
+  },
+  {
+    "Title": "Maneuver Ace",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Reduce cost of moving through all",
+      "Hvy. Woods and Jungle.",
+      "For Aerospace: reduce Control Roll modifier",
+      "for atmospheric combat from +2 to +1."
+    ]
+  },
+  {
+    "Title": "Marksman",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "If Unit does not move this turn;",
+      "Any successful weapon attack this turn,",
+      "will deal only 1 DMG point.",
+      "If Margin of Success is 3 or more:",
+      "Player may make a Critical hit check even",
+      "if Target still has armor points."
+    ]
+  },
+  {
+    "Title": "Melee Master",
+    "Points": 2,
+    "UnitType": ["Mech", "ProtoMech"],
+    "info": [
+      "Adds 1/2 Unit Size (rounded up) as",
+      "as extra damage to any successful",
+      "Melee, Charge, or DFA attack."
+    ]
+  },
+  {
+    "Title": "Melee Specialist",
+    "Points": 1,
+    "UnitType": ["Mech", "ProtoMech"],
+    "info": [
+      "Add a -1 to the To-Hit of any",
+      "Physical attack"
+    ]
+  },
+  {
+    "Title": "Multi-Tasker",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Unit may target 2 Units during the Attack phase.",
+      "Each Attack is resolved like a normal Attack.",
+      "The Damage for each attack is the amount of Damage",
+      "for the proper Range Bracket / 2."
+    ]
+  },
+  {
+    "Title": "Natural Grace",
+    "Points": 3,
+    "UnitType": ["Mech","ProtoMech"],
+    "info": [
+      "Unit may attack in a 360 degree arc.",
+      "Reduce move cost of Ultra Heavy Woods, Jungle, and",
+      "Building terrain by 1in."
+    ]
+  },
+  {
+    "Title": "Oblique Artilleryman",
+    "Points": 1,
+    "UnitType": ["Any"],
+    "info": [
+      "Apply a -1 to the To-Hit of any ART special attack.",
+      "Scatter distance for shells reduced by 2in/1 hex.",
+      "When firing at off-board artillery as counter-battery:",
+      "Attack is full DMG even with 1 Margin of Failure.",
+      "Attacks is 1/2 DMG at MoF of 2 and 3."
+    ]
+  },
+  {
+    "Title": "Oblique Attacker",
+    "Points": 1,
+    "UnitType": ["Any"],
+    "info": [
+      "Apply a -1 to the To-Hit for any ART/IF Attacks.",
+      "Unit may make Indirect Attacks without spotters.",
+      "If doing so, replace the -1 mod with a +2."
+    ]
+  },
+  {
+    "Title": "Range Master",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Choose a either Medium or Long Range brackets.",
+      "Switch the To-Hit mod of this range with",
+      "the Short Range bracket."
+    ]
+  },
+  {
+    "Title": "Ride The Wash",
+    "Points": 4,
+    "UnitType": ["Any Airborne"],
+    "info": [
+      "Reduce Atmospheric Control Roll mod from",
+      "+2 to 0.",
+      "If Unit is Aerospace or Conventional Unit",
+      "that is tailing another aerospace unit,",
+      "and engagement is at Short Range on the Radar Map:",
+      "Instead of attacking, force the target to make",
+      "A Control Roll at +3.",
+      "Failed roll forces Unit inward on Map."
+    ]
+  },
+  {
+    "Title": "Sandblaster",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "When making an exclusive FLK/LRM/SRM/TOR attack;",
+      "Apply a -1 to the To-Hit.",
+      "Add 1 additional DMG point.",
+      "If attack is Short Range, make it 2 points."
+    ]
+  },
+  {
+    "Title": "Shaky Stick",
+    "Points": 2,
+    "UnitType": ["Any Airborne"],
+    "info": [
+      "When Unit is the target of",
+      "ground-to-air attacks:",
+      "Attacker gets +1 to their To-Hit",
+      "against this Unit."
+      
+    ]
+  },  
+  {
+    "Title": "Sharpshooter",
+    "Points": 4,
+    "UnitType": ["Any"],
+    "info": [
+      "If Unit does not move this turn;",
+      "Any successful weapon attack this turn,",
+      "If Margin of Success is 3 or more:",
+      "Player may make a Critical hit check even",
+      "if Target still has armor points.",
+      "Attack deals full regular damage."
+    ]
+  },
+  {
+    "Title": "Slugger",
+    "Points": 1,
+    "UnitType": ["Mech/Any"],
+    "info": [
+      "Unit may spend 2in/1 hex of move",
+      "in Woods, Jungle, Rubble, Buildings",
+      "to gain the MEL special ability."
+    ]
+  },
+  {
+    "Title": "Sniper",
+    "Points": 3,
+    "UnitType": ["Any"],
+    "info": [
+      "Reduce Medium, Long, Extreme",
+      "Range bracket modifiers by",
+      "half."
+    ]
+  },
+  {
+    "Title": "Speed Demon",
+    "Points": 2,
+    "UnitType": ["Any"],
+    "info": [
+      "Gain +2in/1 hex of move.",
+      "Increase Sprint speed by 4in/2 hex per turn.",
+      "TMM is not modified.",
+      "Aerospace Units gain +1 Thrust Point."
+    ]
+  },
+  {
+    "Title": "Stand-Aside",
+    "Points": 1,
+    "UnitType": ["Any"],
+    "info": [
+      "Unit may move through enemy occupied space.",
+      "Cost is +1in per inch moved.",
+      "Unit ignores enemy Zone of Control rule."
+    ]
+  },
+  {
+    "Title": "Street Fighter",
+    "Points": 2,
+    "UnitType": ["Mech","ProtoMech"],
+    "info": [
+      "Any adjacent Enemy that attempts to make a Physical Attack before this Unit;",
+      "this Unit may attempt a Physical Attack first.",
+      "The pre-emptive Physical Attack has an",
+      "additional +1 to the To-Hit mod.",
+      "If Attack succeeds, the DMG applied is",
+      "equal to the Units Size + Short Range DMG + ",
+      "any MEL or TSM mods.",
+      "This damage resolves before the target unit!",
+      "If both Units have Street Fighter, ability",
+      "cancels out."
+    ]
+  },
+  {
+    "Title": "Swordsman",
+    "Points": 2,
+    "UnitType": ["Mech","ProtoMech"],
+    "info": [
+      "If Unit has the MEL special and",
+      "successfully delivers a Physical Attack.",
+      "The Player may choose 1 of 2 options:",
+      "1) deliver 1 extra point of DMG.",
+      "2) make a Critical Hit check on the target.",
+      "Critical Hit check occurs even if target",
+      "still has Armor Points left."
+    ]
+  },
+  {
+    "Title": "Tactical Genius",
+    "Points": 3,
+    "UnitType": ["Any"],
+    "info": [
+      "Every 2 turns;",
+      "If the Unit with this Ability is the Command",
+      "Unit for its side,",
+      "Player may reroll 1 initiative roll once if",
+      "their roll was beaten by the enemy.",
+      "If playing with Battlefield Intel.,",
+      "this Unit gains the MHQ Special."
+    ]
+  },  
+  {
+    "Title": "Terrain Master:Drag Racer",
+    "Points": 3,
+    "UnitType": ["Combat Vehicles","Ground Only","Track/Wheel"],
+    "info": [ 
+      "Unit gains +2in/1 hex during any turn it spends entirely on pavement or ice.",
+      "If Sprinting movement is used; add an additional 4in/2 hex on pavement or ice.",
+      "If Skidding rules are in use; apply a -2 to any Control Roll target numbers for skidding."
+    ]
+  },  
+  {
+    "Title": "Terrain Master:Forest Ranger",
+    "Points": 3,
+    "UnitType": ["Any non-airborne"],
+    "info": [ 
+      "Reduce cost of moving through Woods and Jungle terrain by 1in per inch of move.",
+      "Unit gains an additional +1 cover mod for being in Woods or Jungle terrain."
+    ]
+  },  
+  {
+    "Title": "Terrain Master:Frogman",
+    "Points": 3,
+    "UnitType": ["Mech","ProtoMech"],
+    "info": [ 
+      "Reduce cost of underwater movement by 1in per inch of move.",
+      "Only applies when Unit is fully submerged."
+    ]
+  },
+  {
+    "Title": "Terrain Master:Mountaineer",
+    "Points": 3,
+    "UnitType": ["Any non-airborne"],
+    "info": [ 
+      "Reduce cost of changing height levels, using Climbing move, passing through Rough and Rubble terrain by",
+      "by 1in per inch of move."
+    ]
+  },
+  {
+    "Title": "Terrain Master:NightWalker",
+    "Points": 3,
+    "UnitType": ["Any non-airborne"],
+    "info": [ 
+      "This Unit ignores any modifiers for nighttime without having to activate any SRCH special ability."
+    ]
+  },
+  {
+    "Title": "Terrain Master:Swamp Beast",
+    "Points": 3,
+    "UnitType": ["Any non-airborne"],
+    "info": [ 
+      "Reduce cost of moving through Swamp terrain by 1in per inch of move.",
+      "Unit ignores any Bogged Down rules.",
+      "Any attacks made against this Unit while it is in Swamp terrain suffer an additional +1 to the To-Hit number."
+    ]
+  },
+  {
+    "Title": "Weapon Specialist",
+    "Points": 3,
+    "UnitType": ["Any"],
+    "info": [ 
+      "Instead of making a normal Weapon attack this turn, this Unit may:",
+      "Make a weapon attack with a -1 to the To-Hit number however;",
+      "This special attack will only deal 1/2 of that Units DMG for the given range bracket.",
+      "DMG is rounded down to a minimum of 1.",
+      "Unit may not use Overheat in conjunction with this ability."
+    ]
+  },
+  {
+    "Title": "Wind Walker",
+    "Points": 2,
+    "UnitType": ["Any Airborne"],
+    "info": [ 
+      "Ignore the +2 to any Control Rolls made in Atmospheric Conditions.",
+      "Unit gains a -1 to any Landing or Lift-Off Control Roll target numbers."
+    ]
+  },
+  {
+    "Title": "Zweihander",
+    "Points": 2,
+    "UnitType": ["Mech"],
+    "info": [ 
+      "Unit gains +1 DMG to any Standard or Melee physical attack."
+    ]
+  },
+  {
+    "Title": "Light Horseman",
+    "Points": 2,
+    "UnitType": ["Infantry/Combat"],
+    "info": [ 
+      "Unit must be beast-mounted.",
+      "Unit gains an additional 2in/1 hex of movement per turn.",
+      "Reduce cost of moving through Woods or Rough terrain by 1in per inch of move."
+    ]
+  },
+  {
+    "Title": "Heavy Horse",
+    "Points": 2,
+    "UnitType": ["Infantry/Combat"],
+    "info": [ 
+      "Unit must be beast-mounted.",
+      "Unit gains +1 DMG to any Weapon attacks made against an adjacent Target.",
+      "Does not apply to Physical Attacks."
+    ]
+  },
+  {
+    "Title": "Foot Calvary",
+    "Points": 1,
+    "UnitType": ["Infantry/Combat"],
+    "info": [ 
+      "Unit must be on-foot",
+      "Unit gains an additional 2in/1 hex of movement per turn.",
+      "Reduce cost of moving through Woods,Rough,Rubble,Jungle,Urban terrain by 1in per inch of move."
+    ]
+  },
+  {
+    "Title": "Urban Guerilla",
+    "Points": 1,
+    "UnitType": ["Infantry/Combat", "Battle Armor"],
+    "info": [ 
+      "If this Unit occupies Building,Rough,Rubble, or Paved terrain:",
+      "Attacks made against this Unit suffer an additional +1 To-Hit mod and -1 DMG.",
+      "Once per game, this Unit may spawn a new Infantry unit 6in/3 hex away from it.",
+      "This new Infantry Unit is treated as regular Combat Infantry with the stats:",
+      "Skill: spawning Unit's Skill + 2 (max of 8).",
+      "Move: 2in/1 hex, F-type.",
+      "1 Armor and 1 Structure.",
+      "Damage: 1/Short",
+      "This new Unit is independent of its spawning Unit."
     ]
   }
 ]

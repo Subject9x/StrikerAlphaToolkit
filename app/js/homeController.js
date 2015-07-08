@@ -48,6 +48,11 @@ SA_app_Ctrls.controller('HomeControl', ['$scope','CalcModeService', function($sc
       title : "Pilot Ability Index",
       desc  : "Quick reference guide to Pilot Abilities originally detailed in the Alpha Strike Companion book.",
       mode  : "abl"
+    },
+    grpIndex : {
+      title : "Formation Index",
+      desc  : "Quick reference guide to proper Lances, Stars, and Level II's.",
+      mode  : "grp"
     }
   };
   
@@ -73,6 +78,9 @@ SA_app_Ctrls.controller('HomeControl', ['$scope','CalcModeService', function($sc
         break;
       case 6:
         $scope.toolMode = $scope.toolText['ablIndex'];
+        break;
+      case 7:
+        $scope.toolMode = $scope.toolText['grpIndex'];
         break;
     }
     CalcModeService.setMode($scope.toolMode);

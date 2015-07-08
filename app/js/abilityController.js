@@ -16,7 +16,4 @@ SA_app_Ctrls.controller('ablControl', ['$scope', 'Abilities', 'AbilityInfoServic
 SA_app_Ctrls.controller('ablInfoControl', ['$scope', 'AbilityInfoService',  
   function($scope, AbilityInfoService){
     $scope.ability = AbilityInfoService.getAbility();
-    
-    
-
 }]);

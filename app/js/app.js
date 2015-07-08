@@ -34,6 +34,14 @@ SA_app.config(['$routeProvider',
         templateUrl : 'partials/abilityInfo.html',
         controller  : 'ablInfoControl'
       }).
+      when('/grp',{
+        templateUrl : 'partials/groundFormIndex.html',
+        controller  : 'grpControl'
+      }).
+      when('/grp/:type',{
+        templateUrl : 'partials/groundFormInfo.html',
+        controller  : 'grpInfoControl'
+      }).
       otherwise({
         redirectTo: '/home'
       });

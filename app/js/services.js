@@ -40,4 +40,17 @@ SA_app.service('AbilityInfoService', function(){
   }
 });
 
+/*service for passing chosen pilot ability object to info page */
+SA_app.service('GroupInfoService', function(){
+  var group = {}
+  return {
+    setGroup: function (value) {
+        group = value;
+    },
+    getGroup: function () {
+        return group;
+    }
+  }
+});
+
 
