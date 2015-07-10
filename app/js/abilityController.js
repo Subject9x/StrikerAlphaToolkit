@@ -4,7 +4,6 @@
 SA_app_Ctrls.controller('ablControl', ['$scope', 'Abilities', 'AbilityInfoService',  
   function($scope, Abilities, AbilityInfoService){
     $scope.ablList = Abilities.query();
-    console.log($scope.ablList);
     
     $scope.selectAbility = function(ability){
       AbilityInfoService.setAbility(ability);

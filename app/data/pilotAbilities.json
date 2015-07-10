@@ -221,18 +221,6 @@
     ]
   },
   {
-    "Title": "Iron Will",
-    "Points": 2,
-    "UnitType": ["Any"],
-    "info": [
-      "When Unit must make roll triggered by:",
-      "Antagonizer, Animal Mimicry, Demoralizer;",
-      "Unit gains +2 to their Intimidation roll.",
-      "If using Morale rules, Unit gets -2 to any",
-      "Route or Nerve recovery checks."
-    ]
-  },
-  {
     "Title": "Jumping Jack",
     "Points": 2,
     "UnitType": ["Mech","ProtoMech"],

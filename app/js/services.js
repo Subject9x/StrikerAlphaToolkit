@@ -3,15 +3,8 @@
 /* Striker Alpha Services */
 
 /*service for the pilot ability index */
-var SA_app_AblServ  = angular.module('SA_app_AblServ', ['ngResource']);
+var appServices  = angular.module('appServices', ['ngResource']);
 
-SA_app_AblServ.factory('Abilities', ['$resource', 
-  function($resource){
-    return $resource('indices/pilotAbilities.json', {}, {
-      query: {method:'GET', params:{}, isArray:true}
-    });
-  }]);
-  
 /* service for the mode of the calculator */
 SA_app.service('CalcModeService', function () {
 
@@ -27,6 +20,14 @@ SA_app.service('CalcModeService', function () {
   }
 });
 
+/* Service to gather the data from Abilites JSON */
+appServices.factory('Abilities', ['$resource', 
+  function($resource){
+    return $resource('data/pilotAbilities.json', {}, {
+      query: {method:'GET', params:{}, isArray:true}
+    });
+  }]);
+  
 /*service for passing chosen pilot ability object to info page */
 SA_app.service('AbilityInfoService', function(){
   var pilotAbility = {}
@@ -40,7 +41,15 @@ SA_app.service('AbilityInfoService', function(){
   }
 });
 
-/*service for passing chosen pilot ability object to info page */
+/*service for the Formation index */
+appServices.factory('Formations', ['$resource', 
+  function($resource){
+    return $resource('data/formations.json', {}, {
+      query: {method:'GET', params:{}, isArray:true}
+    });
+  }]);
+  
+/*service for passing Formation info */
 SA_app.service('GroupInfoService', function(){
   var group = {}
   return {

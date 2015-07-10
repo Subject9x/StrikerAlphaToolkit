@@ -6,7 +6,7 @@ var SA_app = angular.module('SA_app', [
   'ui.bootstrap',
   'ngRoute',
   'SA_app_Ctrls',
-  'SA_app_AblServ',
+  'appServices',
   'AblFilters'
 ]);
 
@@ -34,13 +34,13 @@ SA_app.config(['$routeProvider',
         templateUrl : 'partials/abilityInfo.html',
         controller  : 'ablInfoControl'
       }).
-      when('/grp',{
-        templateUrl : 'partials/groundFormIndex.html',
-        controller  : 'grpControl'
+      when('/frm',{
+        templateUrl : 'partials/formationIndex.html',
+        controller  : 'frmControl'
       }).
-      when('/grp/:type',{
-        templateUrl : 'partials/groundFormInfo.html',
-        controller  : 'grpInfoControl'
+      when('/frm/:type',{
+        templateUrl : 'partials/formationInfo.html',
+        controller  : 'frmInfoControl'
       }).
       otherwise({
         redirectTo: '/home'

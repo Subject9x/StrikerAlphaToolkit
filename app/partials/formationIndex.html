@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-center"><b><h3><label class="label label-info">Formation Index</label></h3></b></div>
+  </div>
+
+  <div class="row">
+    <div class="text-center"><h2><label class="label label-primary">Formation</label></h2></div> 
+  </div>
+
+  <div class="row text-center">
+    <div class="btn-group btn-group-lg">
+      <label class="btn btn-default" ng-model="parentForm" btn-radio="0" uncheckable>Ground</label>
+      <label class="btn btn-default" ng-model="parentForm" btn-radio="1" uncheckable>Air</label>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="text-center"><h2><label class="label label-primary">Type</label></h2></div> 
+    </div>
+    <div class="col-xs-8">
+      <div class="text-center"><h2><label class="label label-primary">Variants</label></h2></div> 
+    </div>
+  </div>
+  <div class="row" ng-show="parentForm==0">
+    <div class="col-xs-4">
+      <div class="btn-group btn-group-vertical btn-group-lg">
+        <label class="btn btn-default" ng-repeat="group in formations" ng-model="groupRadio.model" btn-radio="group.id">{{group.id}}</label>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div ng-repeat="">
+        <div class="btn-group btn-group-vertical btn-group-lg" ng-show="">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row" ng-show="parentForm==1">
+  
+  </div>
+</div>

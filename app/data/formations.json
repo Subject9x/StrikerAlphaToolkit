@@ -1,0 +1,20 @@
+[
+  {
+    "Title" : "Assault Group",
+    "id"    : "Assault",
+    "Variants"  : [
+      {"asslt_std" : "Standard"},
+      {"asslt_fst" : "Fast"}
+    ]
+  },
+  {
+    "Title" : "Battle Group",
+    "id"    : "Battle",
+    "Variants"  : [
+      {"battle_std" : "Standard"},
+      {"battle_lgt" : "Light"},
+      {"battle_med" : "Medium"},
+      {"battle_hvy" : "Heavy"}
+    ]
+  }
+]
