@@ -1,0 +1,55 @@
+[
+  {
+    "Title"     : "Standard Recon",
+    "id"        : "Standard",
+    "idealRole": ["Scout"],
+    "minimums"   : [
+      "At least 2 Units that are Scout or Striker."
+    ],
+    "reqs"      : [
+      "All Units must have a min move of 10''."
+    ],
+    "effect"    : [
+      "At start of game:",
+      "Up to 3 Units may be given Eagle Eyes or Manoeuvring Ace abilities.",
+      "Can choose per Unit."
+    ]
+  },  
+  {
+    "Title"     : "Light Recon",
+    "id"        : "Light",
+    "idealRole": ["Scout"],
+    "minimums"   : [
+      "All Units must have min move of 12''."
+    ],
+    "reqs"      : [
+      "All Units must be Size 1.",
+      "All Units must have the Scout role."
+    ],
+    "effect"    : [
+      "All Units gain chosen abilities of Standard Recon Group.",
+      "Additionally:",
+      "All Units gain the Forward Observer ability."
+    ]
+  },  
+  {
+    "Title"     : "Heavy Recon",
+    "id"        : "Heavy",
+    "idealRole": ["Scout"],
+    "minimums"   : [
+      "All Units must have min move of 8''.",
+      "At least 2 Units must have move of 10'' or higher.",
+      "At least 1 Unit must be Size 3 or larger.",
+      "At least 2 Units must have the Scout role."
+    ],
+    "reqs"      : [
+      "All Units must be Size 1.",
+      "All Units must have the Scout role."
+    ],
+    "effect"    : [
+      "Max 2 Units gain chosen abilities of Standard Recon Group.",
+      "Additionally:",
+      "All Units gain the Forward Observer ability."
+    ]
+  }
+]

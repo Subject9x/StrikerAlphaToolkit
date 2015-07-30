@@ -2,19 +2,79 @@
   {
     "Title" : "Assault Group",
     "id"    : "Assault",
-    "Variants"  : [
-      {"asslt_std" : "Standard"},
-      {"asslt_fst" : "Fast"}
+    "file"  : "assaultFormations",
+    "variants":[
+      "Standard",
+      "Fast" 
+    ]
+  },
+  {
+    "Title" : "Basic Group",
+    "id"    : "Basic",
+    "file"  : "basicFormations",
+    "variants":[
+      "Standard"
     ]
   },
   {
     "Title" : "Battle Group",
     "id"    : "Battle",
-    "Variants"  : [
-      {"battle_std" : "Standard"},
-      {"battle_lgt" : "Light"},
-      {"battle_med" : "Medium"},
-      {"battle_hvy" : "Heavy"}
+    "file"  : "battleFormations",
+    "variants":[
+      "Standard",
+      "Light",  
+      "Medium",
+      "Heavy"  
+    ]
+  },
+  {
+    "Title" : "Command Group",
+    "id"    : "Command",
+    "file"  : "cmdFormations",
+    "variants":[
+      "Standard"
+    ]
+  },    
+  {
+    "Title" : "Fire Group",
+    "id"    : "Fire",
+    "file"  : "fireFormations",
+    "variants":[
+      "Standard",
+      "Direct",
+      "Indirect",
+      "Artillery",
+      "Anti-Air"
+    ]
+  },
+  {
+    "Title" : "Pursuit Group",
+    "id"    : "Pursuit",
+    "file"  : "pursuitFormations",
+    "variants":[
+      "Standard",
+      "Probe",
+      "Sweep"
+    ]
+  },
+  {
+    "Title" : "Striker Group",
+    "id"    : "Striker",
+    "file"  : "strikerFormations",
+    "variants":[
+      "Standard",
+      "Light",
+      "Heavy"
+    ]
+  },
+  {
+    "Title" : "Recon Group",
+    "id"    : "Recon",
+    "file"  : "reconFormations",
+    "variants":[
+      "Standard",
+      "Light",
+      "Heavy"
     ]
   }
 ]

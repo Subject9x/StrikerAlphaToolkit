@@ -1,15 +1,11 @@
 'use strict';
 
 /* Striker Alpha Services */
-
-/*service for the pilot ability index */
 var appServices  = angular.module('appServices', ['ngResource']);
 
 /* service for the mode of the calculator */
 SA_app.service('CalcModeService', function () {
-
   var calcMode = {};
-
   return {
     setMode: function (value) {
         calcMode = value;
@@ -41,7 +37,7 @@ SA_app.service('AbilityInfoService', function(){
   }
 });
 
-/*service for the Formation index */
+/*service for the Group Formation data index */
 appServices.factory('Formations', ['$resource', 
   function($resource){
     return $resource('data/formations.json', {}, {
@@ -49,17 +45,23 @@ appServices.factory('Formations', ['$resource',
     });
   }]);
   
-/*service for passing Formation info */
-SA_app.service('GroupInfoService', function(){
-  var group = {}
+/*service for passing chosen SubGroup to FormationInfo page */
+SA_app.service('BattleGroupService', function(){
+  var selectedGroup = {}
   return {
     setGroup: function (value) {
-        group = value;
+        selectedGroup = value;
     },
     getGroup: function () {
-        return group;
+        return selectedGroup;
     }
   }
 });
 
-
+/*service for grabbing the proper */
+appServices.factory('GetSubForms', ['$resource', 
+  function($resource){
+    return $resource('data/:formId.json', {}, {
+      query: {method:'GET', params:{formId:'form'}, isArray:true}
+    });
+  }]);

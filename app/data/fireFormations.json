@@ -1,0 +1,76 @@
+[
+  {
+    "Title"     : "Standard Fire",
+    "id"        : "Standard",
+    "idealRole": ["Missile Boat"],
+    "minimums"   : [],
+    "reqs"      : [
+      "75% of Units must be either Missile Boat or Sniper".
+    ],
+    "effect"    : [
+      "Every Combat Phase:",
+      "2 Unit may be given the Sniper ability."
+    ]
+  },
+  {
+    "Title"     : "Indirect Fire",
+    "id"        : "Indirect",
+    "idealRole": ["Missile Boat"],
+    "minimums"   : [
+      "At least 3 Units must possess the Indirect Fire (IF#) ability."
+    ],
+    "reqs"      : [
+      "75% of Units must be either Missile Boat or Sniper".
+    ],
+    "effect"    : [
+      "Every Combat Phase:",
+      "2 Unit may be given the Oblique Attacker ability."
+    ]
+  },
+  {
+    "Title"     : "Direct Fire",
+    "id"        : "Indirect",
+    "idealRole": ["Missile Boat"],
+    "minimums"   : [
+      "At least 2 Units must be Size 3 or larger."
+    ],
+    "reqs"      : [
+      "All Units must have a Long Range DMG value >= 2".
+    ],
+    "effect"    : [
+      "Every Combat Phase:",
+      "2 Unit may be given the Weapon Specialist ability."
+    ]
+  },
+  {
+    "Title"     : "Artillery Fire",
+    "id"        : "Artillery",
+    "idealRole": ["Missile Boat"],
+    "minimums"   : [
+      "At least 2 Units must possess the Artillery (ARTX-#) ability."
+    ],
+    "reqs"      : [
+      "none"
+    ],
+    "effect"    : [
+      "Every Combat Phase:",
+      "2 Unit may be given the Oblique Artilleryman ability."
+    ]
+  },  
+  {
+    "Title"     : "Anti-Air Fire",
+    "id"        : "Anti-Air ",
+    "idealRole": ["Missile Boat"],
+    "minimums"   : [
+      "At least 2 Units must possess the Flak (FLK-#),Autocannon (A\C#/#/#), Artillery (ARTX-#) ability.",
+      "or have the Anti-Air Targeting Quirk."
+    ],
+    "reqs"      : [
+      "75% of Units must be either Missile Boat or Sniper".
+    ],
+    "effect"    : [
+      "Each Turn:",
+      "2 Unit may be given the Anti-Air Specialist ability."
+    ]
+  }
+]

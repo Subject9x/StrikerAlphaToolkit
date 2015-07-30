@@ -1,0 +1,59 @@
+[
+  {
+    "Title"     : "Standard Battle",
+    "id"        : "Standard",
+    "idealRole": ["Brawler"],
+    "minimums"   : [
+      "At least 3 Units must be any combination of Brawler, Striker, Skirmisher."
+    ],
+    "reqs"      : [
+      "50% of Units must be Size 3 or more."
+    ],
+    "effect"    : [
+      "Group gains a 6-point Lucky Skill applicable to any Unit in group."
+    ]
+  },  
+  {
+    "Title"     : "Light Battle",
+    "id"        : "Light",
+    "idealRole": ["Brawler"],
+    "minimums"   : [
+      "At least 1 Unit must be a Scout."
+    ],
+    "reqs"      : [
+      "75% of Units must be Size 1.",
+      "No Unit may be Size 4 or larger."
+    ],
+    "effect"    : [
+      "Group gains a 6-point Lucky Skill applicable to any Unit in group."
+    ]
+  },  
+  {
+    "Title"     : "Medium Battle",
+    "id"        : "Medium",
+    "idealRole": ["Brawler"],
+    "minimums"   : [
+      "50% of Units must be Size 2."
+    ],
+    "reqs"      : [
+      "No Unit may be Size 4 or larger."
+    ],
+    "effect"    : [
+      "Group gains a 6-point Lucky Skill applicable to any Unit in group."
+    ]
+  },  
+  {
+    "Title"     : "Heavy Battle",
+    "id"        : "Heavy",
+    "idealRole": ["Brawler"],
+    "minimums"   : [
+      "3 Units must be Size 3 or larger."
+    ],
+    "reqs"      : [
+      "No Unit can be Size 1."
+    ],
+    "effect"    : [
+      "Group gains a 6-point Lucky Skill applicable to any Unit in group."
+    ]
+  }
+]

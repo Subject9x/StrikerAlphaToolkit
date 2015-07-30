@@ -1,0 +1,19 @@
+[
+  {
+    "Title"     : "Standard Command",
+    "id"        : "Standard",
+    "idealRole": ["None"],
+    "minimums"   : [
+      "50% Units must be of Juggernaut, Missile Boat, Skirmisher, Sniper.",
+      "25% Units must be of Brawler, Striker, Scout."
+    ],
+    "reqs"      : [
+      "1 Unit must be publicly declared as the Commander Unit."
+    ],
+    "effect"    : [
+      "Chosen Commander Unit gets Tactical Genius for free.",
+      "Choose 2 Abilities - assign 1 Pilot per Ability: ",
+      "Antagonizer, Blood Stalker, Combat Intuition, Eagle Eyes, Marksman, Multitasker."
+    ]
+  }
+]

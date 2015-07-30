@@ -1,0 +1,50 @@
+[
+  {
+    "Title"     : "Standard Striker",
+    "id"        : "Standard",
+    "idealRole": ["Striker"],
+    "minimums"   : [
+      "Ground Move of 10'' or Jump of 8''."
+    ],
+    "reqs"      : [
+      "No Units of Size 4 or larger.",
+      "50% of Units must be Striker or Skirmisher."
+    ],
+    "effect"    : [
+      "75% of Group gets Speed Demon for free."
+    ]
+  },
+  {
+    "Title"     : "Light Striker",
+    "id"        : "Light",
+    "idealRole": ["Striker"],
+    "minimums"   : [
+      "Ground Move of 10'' regardless of Jump capacity.",
+      "At least 2 Units have Long Range DMG value > 0.",
+      "At least 2 Units must be Striker or Skirmisher."
+    ],
+    "reqs"      : [
+      "No Units of Size 3 or larger."
+    ],
+    "effect"    : [
+      "75% of Group gets Speed Demon for free."
+    ]
+  },
+  {
+    "Title"     : "Heavy Striker",
+    "id"        : "Heavy",
+    "idealRole": ["Striker"],
+    "minimums"   : [
+      "Ground Move of 18'' regardless of Jump capacity.",
+      "At least 3 Units have Long Range DMG value > 1.",
+      "At least 2 Units must be Striker or Skirmisher.",
+      "At least 3 Units must be Size 3 or larger."
+    ],
+    "reqs"      : [
+      "No Units of Size 1."
+    ],
+    "effect"    : [
+      "75% of Group gets Speed Demon for free."
+    ]
+  }
+]

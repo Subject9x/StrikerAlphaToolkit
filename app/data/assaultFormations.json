@@ -1,0 +1,38 @@
+[
+  {
+    "Title"     : "Standard Assault",
+    "id"        : "Standard",
+    "idealRole": ["Juggernaut"],
+    "minimums"   : [
+      "1 Unit with Juggernaut role.",
+      "2 Units with Sniper role."
+    ],
+    "reqs"      : [
+      "3 Units must be Size 3 or higher.",
+      "No Size 1 Units.",
+      "All Units must have a Medium Range DMG value of 3 or higher."
+    ],
+    "effect"    : [
+      "Each turn select 2 Units in the Group:",
+      "Give each Unit either Demoralizer or Multi-Tasker."
+    ]
+  },
+  {
+    "Title"     : "Fast Assault",
+    "id"        : "Fast",
+    "idealRole": ["Juggernaut"],
+    "minimums"   : [
+      "1 Unit with Juggernaut role.",
+      "2 Units with Sniper role."
+    ],
+    "reqs"      : [
+      "3 Units must be Size 3 or higher.",
+      "No Size 1 Units.",
+      "All Units must have a Medium Range DMG value of 3 or higher."
+    ],
+    "effect"    : [
+      "Each turn select 2 Units in the Group:",
+      "Give each Unit either Demoralizer or Multi-Tasker."     
+    ]
+  }
+]

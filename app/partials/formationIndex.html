@@ -9,8 +9,8 @@
 
   <div class="row text-center">
     <div class="btn-group btn-group-lg">
-      <label class="btn btn-default" ng-model="parentForm" btn-radio="0" uncheckable>Ground</label>
-      <label class="btn btn-default" ng-model="parentForm" btn-radio="1" uncheckable>Air</label>
+      <label class="btn btn-default" ng-model="radios.parent" btn-radio="0" uncheckable>Ground</label>
+      <label class="btn btn-default" ng-model="radios.parent" btn-radio="1" uncheckable>Air</label>
     </div>
   </div>
   
@@ -22,22 +22,30 @@
       <div class="text-center"><h2><label class="label label-primary">Variants</label></h2></div> 
     </div>
   </div>
-  <div class="row" ng-show="parentForm==0">
+  
+  <div class="row" ng-show="radios.parent==0">
     <div class="col-xs-4">
       <div class="btn-group btn-group-vertical btn-group-lg">
-        <label class="btn btn-default" ng-repeat="group in formations" ng-model="groupRadio.model" btn-radio="group.id">{{group.id}}</label>
+        <label class="btn btn-default" 
+          ng-repeat="cbtGrp in combatGroups" 
+          ng-model="radios.grpType" 
+          btn-radio="cbtGrp.id">{{cbtGrp.id}}</label>
       </div>
     </div>
-    <div class="col-xs-6">
-      <div ng-repeat="">
-        <div class="btn-group btn-group-vertical btn-group-lg" ng-show="">
-        
+    <div class="col-xs-8 text-center">
+      <div class="panel panel-default">
+        <div class="btn-group btn-group-lg btn-group-vertical">
+          <label class="btn btn-default" 
+            ng-repeat="sType in radios.typeSelect.variants" 
+            ng-model="radios.subType" 
+            ng-click="selectSubGroup(sType)" 
+            uncheckable>{{sType}}</label>
         </div>
       </div>
     </div>
   </div>
   
-  <div class="row" ng-show="parentForm==1">
+  <div class="row" ng-show="radios.parent==1">
   
   </div>
 </div>

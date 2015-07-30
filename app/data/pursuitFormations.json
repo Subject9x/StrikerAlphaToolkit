@@ -1,0 +1,47 @@
+[
+  {
+    "Title"     : "Standard Pursuit",
+    "id"        : "Standard",
+    "idealRole": ["Skirmisher"],
+    "minimums"   : [
+      "At least 1 Unit has Medium Range DMG value >= 1."
+    ],
+    "reqs"      : [
+      "All Units must be Size 2 or smaller.",
+      "75% of Units must have a move of 12'' or higher."
+    ],
+    "effect"    : [
+      "75% of Group gets Blood Stalker for free."
+    ]
+  },
+  {
+    "Title"     : "Probe Pursuit",
+    "id"        : "Probe",
+    "idealRole": ["Skirmisher"],
+    "minimums"   : [
+      "At least 1 Unit has Medium Range DMG value >= 2.",
+      "75% of Units must have a move of 10'' or higher."
+    ],
+    "reqs"      : [
+      "All Units must be Size 3 or smaller."
+    ],
+    "effect"    : [
+      "75% of Group gets Blood Stalker for free."
+    ]
+  },
+  {
+    "Title"     : "Sweep Pursuit",
+    "id"        : "Sweep",
+    "idealRole": ["Skirmisher"],
+    "minimums"   : [
+      "At least 1 Unit has Short Range DMG value >= 2."
+    ],
+    "reqs"      : [
+      "All Units must be Size 2 or smaller.",
+      "All Units must have a move of 10'' or higher."
+    ],
+    "effect"    : [
+      "75% of Group gets Blood Stalker for free."
+    ]
+  }
+]

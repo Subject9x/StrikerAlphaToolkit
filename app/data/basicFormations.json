@@ -1,0 +1,21 @@
+[
+  {
+    "Title"     : "Standard Basic",
+    "id"        : "Standard",
+    "idealRole": ["None"],
+    "minimums"   : [
+      "None"
+    ],
+    "reqs"      : [
+      "None"
+    ],
+    "effect"    : [
+      "Designate another group for this lance to support.",
+      "As long as this group is 3 Units or more:",
+      "For every 2 Units in the chosen group that have a group-given ability:",
+      "1 Basic Group Unit may use this ability.",
+      "If supporting the Command Group, the support Group group gains 2 abilities as designated in the Command Lance,",
+      "Commander's Ability cannot be duplicated!"
+    ]
+  }
+]
