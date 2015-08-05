@@ -7,7 +7,8 @@ SA_app_Ctrls.controller('ablControl', ['$scope', 'Abilities', 'AbilityInfoServic
     
     $scope.selectAbility = function(ability){
       AbilityInfoService.setAbility(ability);
-      window.location.href = "#/abl/"+ability.Title;
+      var ablTitle = ability.Title.split(' ').join('_')
+      window.location.href = "#/abl/"+ablTitle;
     };
 }]);
 

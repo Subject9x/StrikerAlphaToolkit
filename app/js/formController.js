@@ -28,7 +28,7 @@ SA_app_Ctrls.controller('frmControl', ['$scope', 'Formations', 'BattleGroupServi
       chosen.file = $scope.radios.typeSelect.file;
       chosen.variant = subType;
       BattleGroupService.setGroup(chosen);
-      window.location.href = "#/frm/"+chosen.subType;
+      window.location.href = "#/frm/"+$scope.radios.grpType+"_"+chosen.variant;
     }
     
 }]);
